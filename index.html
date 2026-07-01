@@ -3,494 +3,380 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hyperion Rural & Urban Tech | Conectividade Premium</title>
-    <meta name="description" content="Suporte técnico de alta tecnologia para o agronegócio, fazendas, empresas e residências urbanas. Conectividade, automação e infraestrutura de TI robusta.">
+    <title>Hyperion Rural & Urban Tech | Suporte Técnico Urbano e Rural</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
-    <div class="floating-actions">
-        <a href="#" class="float-btn whatsapp" aria-label="Contato via WhatsApp"><svg viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 11.966.01c3.184.001 6.177 1.242 8.426 3.496 2.248 2.254 3.487 5.252 3.486 8.44-.004 6.557-5.343 11.897-11.913 11.897-2.005-.001-3.973-.508-5.713-1.47L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.37 9.864-9.742.002-2.602-1.01-5.05-2.85-6.892-1.84-1.842-4.29-2.856-6.891-2.858-5.44 0-9.863 4.372-9.867 9.744-.002 1.764.471 3.487 1.373 5.035l-.968 3.535 3.633-.941z"/></svg></a>
-        <a href="#" class="float-btn telegram" aria-label="Contato via Telegram"><svg viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm4.869 8.246c-.19 1.942-1.002 6.726-1.413 8.93-.174.931-.516 1.243-.849 1.274-.724.067-1.273-.477-1.973-.936-1.096-.718-1.716-1.164-2.78-1.866-1.23-.811-.433-1.258.269-1.986.183-.19 3.376-3.1 3.438-3.367.008-.033.015-.157-.059-.223-.075-.066-.184-.043-.263-.025-.113.025-1.906 1.21-5.385 3.562-.51.351-.971.521-1.385.511-.457-.01-1.335-.259-1.988-.471-.802-.26-1.44-.398-1.384-.84.029-.23.346-.466.953-.708 3.725-1.622 6.208-2.693 7.447-3.212 3.541-1.482 4.275-1.74 4.756-1.749.106-.002.344.024.496.148.129.106.164.254.173.357.01.096.014.281-.004.417z"/></svg></a>
-        <button id="backToTop" class="float-btn scroll-top" aria-label="Voltar ao topo">↑</button>
+    <div class="loader" id="loader">
+        <div class="spinner"></div>
     </div>
 
-    <header id="mainHeader">
-        <div class="container header-container">
-            <div class="logo">
-                <svg width="45" height="45" viewBox="0 0 100 100" class="logo-svg">
-                    <circle cx="50" cy="50" r="45" stroke="#d4af37" stroke-width="2" fill="none"/>
-                    <path d="M50,15 L50,85 M15,50 L85,50" stroke="#00ff66" stroke-width="1" stroke-dasharray="2,2"/>
-                    <path d="M35,65 Q50,30 65,65" stroke="#00ff66" stroke-width="4" fill="none" stroke-linecap="round"/>
-                    <circle cx="50" cy="35" r="7" fill="#d4af37"/>
-                    <circle cx="35" cy="65" r="5" fill="#00ff66"/>
-                    <circle cx="65" cy="65" r="5" fill="#00ff66"/>
-                </svg>
-                <div class="logo-text">
-                    <span class="brand-title">HYPERION</span>
-                    <span class="brand-sub">RURAL & URBAN TECH</span>
-                </div>
-            </div>
+    <a href="https://wa.me/5533991098620" class="whatsapp-float" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-whatsapp"></i>
+    </a>
 
+    <button id="backToTop" class="back-to-top"><i class="fas fa-arrow-up"></i></button>
+
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+               <img src="ChatGPT Image 1 de jul. de 2026, 15_46_21.png" alt=""> </i> Hyperion Rural<span> & Urban Tech</span>
+            </a>
             <nav class="nav-menu" id="navMenu">
                 <a href="#inicio" class="nav-link active">Início</a>
-                <a href="#sobre" class="nav-link">Sobre Nós</a>
+                <a href="#sobre" class="nav-link">Sobre</a>
                 <a href="#servicos" class="nav-link">Serviços</a>
-                <a href="#planos" class="nav-link">Planos</a>
-                <a href="#projetos" class="nav-link">Projetos</a>
-                <a href="#blog" class="nav-link">Blog</a>
+                <a href="#diferenciais" class="nav-link">Diferenciais</a>
+                <a href="#atendimento" class="nav-link">Atendimento</a>
                 <a href="#contato" class="nav-link">Contato</a>
             </nav>
-
-            <div class="header-actions">
-                <button id="themeToggle" class="theme-btn" aria-label="Alternar Tema">🌓</button>
-                <a href="#orcamento" class="btn btn-gold btn-sm hide-mobile">Orçamento Rápido</a>
-                <button class="menu-toggle" id="menuToggle" aria-label="Abrir Menu">
-                    <span></span><span></span><span></span>
-                </button>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </div>
         </div>
     </header>
 
-    <section id="inicio" class="hero-slider">
-        <div class="slider-container" id="heroSlider">
-            <div class="slide active" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1625246333195-78d9c38ad451?q=80&w=1920');">
-                <div class="slide-content">
-                    <span class="slide-tag">Conectividade Avançada</span>
-                    <h1>Fazendas Inteligentes e Conectadas</h1>
-                    <p>Leve a potência da internet de alta velocidade e o monitoramento em tempo real para a sua produção rural.</p>
-                    <div class="slide-btns">
-                        <a href="#orcamento" class="btn btn-gold">Solicitar Orçamento</a>
-                        <a href="#" class="btn btn-outline">Falar no WhatsApp</a>
-                    </div>
-                </div>
-            </div>
-            <div class="slide" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1544383835-bda2bc66a55d?q=80&w=1920');">
-                <div class="slide-content">
-                    <span class="slide-tag">Infraestrutura Urbana</span>
-                    <h1>Tecnologia Corporativa de Ponta</h1>
-                    <p>Suporte de TI robusto, servidores e segurança digital avançada para empresas e residências urbanas.</p>
-                    <div class="slide-btns">
-                        <a href="#orcamento" class="btn btn-gold">Solicitar Orçamento</a>
-                        <a href="#" class="btn btn-outline">Falar no WhatsApp</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="slider-nav">
-            <button class="slide-arrow prev">❮</button>
-            <button class="slide-arrow next">❯</button>
-        </div>
-    </section>
-
-    <section id="sobre" class="section bg-dark">
-        <div class="container text-center mb-5">
-            <h2 class="section-title">Inovação que Conecta Passado e Futuro</h2>
-            <p class="section-subtitle">A Hyperion Rural & Urban Tech une a robustez do agronegócio à agilidade do ecossistema urbano tecnológico.</p>
-        </div>
-        <div class="container grid grid-2">
-            <div class="about-text scroll-anim">
-                <h3>Nossa Missão</h3>
-                <p>Prover soluções tecnológicas disruptivas que garantam a continuidade operacional, automação avançada e infraestrutura de rede resiliente para propriedades rurais e verticais corporativas.</p>
-                <div class="mvv-grid">
-                    <div class="mvv-card">
-                        <h4>Visão</h4>
-                        <p>Ser a maior referência nacional em integração tecnológica de ecossistemas rurais e urbanos até 2028.</p>
-                    </div>
-                    <div class="mvv-card">
-                        <h4>Valores</h4>
-                        <p>Inovação Contínua, Integridade, Conectividade Total e Excelência Técnica Premium.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="about-stats scroll-anim">
-                <div class="stats-grid">
-                    <div class="stat-box">
-                        <div class="counter" data-target="500">0</div>
-                        <p>Clientes Atendidos</p>
-                    </div>
-                    <div class="stat-box">
-                        <div class="counter" data-target="200">0</div>
-                        <p>Fazendas Conectadas</p>
-                    </div>
-                    <div class="stat-box">
-                        <div class="counter" data-target="1000">0</div>
-                        <p>Equipamentos Instalados</p>
-                    </div>
-                    <div class="stat-box">
-                        <div class="counter" data-target="12">0</div>
-                        <p>Anos de Experiência</p>
-                    </div>
-                </div>
+    <section id="inicio" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content hidden-reveal">
+            <h1>Tecnologia Inteligente para o <span class="text-gradient">Campo</span> e para a <span class="text-gradient">Cidade</span></h1>
+            <p>"Levamos soluções completas em suporte técnico para empresas, produtores rurais e residências."</p>
+            <div class="hero-buttons">
+                <a href="#contato" class="btn btn-primary btn-ripple">Solicitar Atendimento</a>
+                <a href="https://wa.me/5533991098620" target="_blank" class="btn btn-secondary btn-ripple"><i class="fab fa-whatsapp"></i> Falar no WhatsApp</a>
             </div>
         </div>
     </section>
 
-    <section id="servicos" class="section bg-light">
-        <div class="container text-center mb-5">
-            <h2 class="section-title">Soluções Especializadas</h2>
-            <div class="search-box-container">
-                <input type="text" id="serviceSearch" class="form-control text-center" placeholder="🔍 O que você precisa resolver hoje? Busque por serviços...">
-            </div>
-        </div>
-
+    <section id="sobre" class="sobre section-padding">
         <div class="container">
-            <h3 class="category-title rural-color">➔ Área Rural & Agronegócio</h3>
-            <div class="grid grid-3 service-group">
-                <div class="card service-card" data-service="internet rural antenas wifi fazendas">
-                    <div class="card-icon">📡</div>
-                    <h4>Internet & Antenas Rurais</h4>
-                    <p>Instalação de sistemas de longo alcance, antenas satelitais e distribuição Wi-Fi Mesh para grandes extensões de terra.</p>
-                </div>
-                <div class="card service-card" data-service="monitoramento cameras segurança cftv">
-                    <div class="card-icon">👁️</div>
-                    <h4>Monitoramento por Câmeras</h4>
-                    <p>CFTV Inteligente alimentado por energia solar para monitoramento de perímetros, rebanhos e sedes.</p>
-                </div>
-                <div class="card service-card" data-service="automacao rural energia solar servidores roteadores">
-                    <div class="card-icon">🚜</div>
-                    <h4>Automação & IoT Agrícola</h4>
-                    <p>Integração de sensores de umidade, automação de pivôs de irrigação e servidores locais dedicados.</p>
-                </div>
+            <div class="section-header hidden-reveal">
+                <h2>Sobre a Empresa</h2>
+                <div class="bar-title"></div>
             </div>
-
-            <h3 class="category-title urban-color mt-5">➔ Área Urbana & Corporativa</h3>
-            <div class="grid grid-3 service-group">
-                <div class="card service-card" data-service="suporte empresarial residencial formatacao computadores pcs">
-                    <div class="card-icon">💻</div>
-                    <h4>Suporte Técnico Integral</h4>
-                    <p>Montagem, formatação e manutenção preventiva/corretiva de computadores e servidores empresariais.</p>
+            <div class="sobre-grid">
+                <div class="sobre-text hidden-reveal">
+                    <p>A <strong>Hyperion Digital</strong> é especializada em suporte técnico, manutenção de computadores, notebooks, celulares, impressoras, redes e soluções tecnológicas para clientes urbanos e rurais. Unimos inovação e sustentabilidade para conectar você ao que mais importa.</p>
                 </div>
-                <div class="card service-card" data-service="redes corporativas backup segurança consultoria ti">
-                    <div class="card-icon">🔒</div>
-                    <h4>Segurança Digital & Redes</h4>
-                    <p>Implantação de firewalls, infraestrutura de redes estruturadas, backups automatizados em nuvem e consultoria.</p>
-                </div>
-                <div class="card service-card" data-service="atendimento remoto preventivo empresarial">
-                    <div class="card-icon">🛠️</div>
-                    <h4>Atendimento Remoto Express</h4>
-                    <p>Suporte imediato via software dedicado para resolução rápida de falhas lógicas e de sistemas.</p>
+                <div class="mve-grid">
+                    <div class="mve-card hidden-reveal">
+                        <i class="fas fa-rocket"></i>
+                        <h3>Missão</h3>
+                        <p>Prover soluções tecnológicas eficientes com agilidade, superando distâncias entre o urbano e o rural.</p>
+                    </div>
+                    <div class="mve-card hidden-reveal">
+                        <i class="fas fa-eye"></i>
+                        <h3>Visão</h3>
+                        <p>Ser a maior referência regional em suporte técnico e infraestrutura tecnológica integrada.</p>
+                    </div>
+                    <div class="mve-card hidden-reveal">
+                        <i class="fas fa-handshake"></i>
+                        <h3>Valores</h3>
+                        <p>Confiança, inovação contínua, responsabilidade ambiental e excelência no atendimento.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="section bg-dark text-center">
-        <div class="container mb-5">
-            <h2 class="section-title">Nossa Área de Atendimento</h2>
-            <p class="section-subtitle">Geolocalização estratégica para atendimento presencial ultrarrápido.</p>
+    <section class="estatisticas">
+        <div class="container estatisticas-grid">
+            <div class="estatistica-item hidden-reveal">
+                <h3 class="counter" data-target="500">0</h3>
+                <p>+ Clientes Atendidos</p>
+            </div>
+            <div class="estatistica-item hidden-reveal">
+                <h3 class="counter" data-target="1200">0</h3>
+                <p>+ Serviços Realizados</p>
+            </div>
+            <div class="estatistica-item hidden-reveal">
+                <h3 class="counter" data-target="98">0</h3>
+                <p>% de Satisfação</p>
+            </div>
+            <div class="estatistica-item hidden-reveal">
+                <h3>24h</h3>
+                <p>Suporte Alerta</p>
+            </div>
         </div>
+    </section>
+
+    <section id="servicos" class="servicos section-padding">
         <div class="container">
-            <div class="map-placeholder">
-                <div class="map-overlay">
-                    <h4>📡 Cobertura Total via Satélite e Unidades Móveis 4x4</h4>
-                    <p>Atendemos integralmente Cidades, Distritos Industriais, Fazendas, Sítios, Chácaras e Condomínios Fechados.</p>
-                    <div class="badges-cobertura">
-                        <span class="badge">Zonas Rurais</span>
-                        <span class="badge">Centros Urbanos</span>
-                        <span class="badge">Pólos Agroindustriais</span>
-                    </div>
+            <div class="section-header hidden-reveal">
+                <h2>Nossos Serviços</h2>
+                <div class="bar-title"></div>
+            </div>
+            <div class="services-grid">
+                <div class="service-card hidden-reveal">
+                    <i class="fas fa-desktop"></i>
+                    <h3>Manutenção de Computadores</h3>
+                    <p>Reparo de hardware, upgrades de desempenho e limpeza interna completa.</p>
+                </div>
+                <div class="service-card hidden-reveal">
+                    <i class="fas fa-laptop"></i>
+                    <h3>Manutenção de Notebooks</h3>
+                    <p>Conserto de telas, troca de teclados, baterias e reparo de placas-mãe.</p>
+                </div>
+                <div class="service-card hidden-reveal">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Assistência para Celulares</h3>
+                    <p>Troca de vidro, displays, conectores de carga e recuperação de sistemas.</p>
+                </div>
+                <div class="service-card hidden-reveal">
+                    <i class="fas fa-print"></i>
+                    <h3>Impressoras</h3>
+                    <p>Configuração, manutenção preventiva e instalação de sistemas de tinta.</p>
+                </div>
+                <div class="service-card hidden-reveal">
+                    <i class="fas fa-wifi"></i>
+                    <h3>Redes Wi-Fi</h3>
+                    <p>Estruturação de redes de alta performance para longas distâncias residenciais ou rurais.</p>
+                </div>
+                <div class="service-card hidden-reveal">
+                    <i class="fas fa-code-branch"></i>
+                    <h3>Instalação de Softwares</h3>
+                    <p>Sistemas operacionais, ferramentas corporativas e softwares agrícolas.</p>
+                </div>
+                <div class="service-card hidden-reveal">
+                    <i class="fas fa-disc"></i>
+                    <h3>Formatação</h3>
+                    <p>Instalação limpa de OS com preservação total de licenças oficiais.</p>
+                </div>
+                <div class="service-card hidden-reveal">
+                    <i class="fas fa-hdd"></i>
+                    <h3>Backup de Dados</h3>
+                    <p>Criação de rotinas seguras de cópias físicas e em nuvem contra perdas.</p>
+                </div>
+                <div class="service-card hidden-reveal">
+                    <i class="fas fa-building"></i>
+                    <h3>Atendimento Empresarial</h3>
+                    <p>Contratos de suporte dedicados a comércios e escritórios urbanos.</p>
+                </div>
+                <div class="service-card hidden-reveal">
+                    <i class="fas fa-tractor"></i>
+                    <h3>Atendimento Rural</h3>
+                    <p>Suporte especializado focado em fazendas, usinas e agroindústrias.</p>
+                </div>
+                <div class="service-card hidden-reveal">
+                    <i class="fas fa-comments"></i>
+                    <h3>Consultoria Tecnológica</h3>
+                    <p>Estudo e planejamento de otimização de infraestrutura de T.I.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="planos" class="section bg-light">
-        <div class="container text-center mb-5">
-            <h2 class="section-title">Planos de Suporte Tecnológico</h2>
-            <p class="section-subtitle">Estruturas previsíveis para garantir estabilidade e performance.</p>
-        </div>
-        <div class="container grid grid-3">
-            <div class="card pricing-card">
-                <h3>Plano Básico</h3>
-                <div class="price">R$ <span>249</span>/mês</div>
-                <ul>
-                    <li>Suporte Remoto Ilimitado</li>
-                    <li>Atendimento Comercial (8x5)</li>
-                    <li>Manutenção de 1 Roteador/Antena</li>
-                    <li>Apoio Técnico para Computadores</li>
-                </ul>
-                <a href="#chamado" class="btn btn-outline btn-block">Contratar Agora</a>
+    <section id="diferenciais" class="diferenciais section-padding">
+        <div class="container">
+            <div class="section-header hidden-reveal">
+                <h2>Por que nos escolher?</h2>
+                <div class="bar-title"></div>
             </div>
-            <div class="card pricing-card featured">
-                <div class="featured-badge">Mais Vendido</div>
-                <h3>Plano Profissional</h3>
-                <div class="price">R$ <span>599</span>/mês</div>
-                <ul>
-                    <li>Suporte Presencial e Remoto</li>
-                    <li>Monitoramento Preventivo 24/7</li>
-                    <li>Suporte a Infraestrutura de Wi-Fi Mesh</li>
-                    <li>Backup de Dados Essenciais</li>
-                </ul>
-                <a href="#chamado" class="btn btn-gold btn-block">Contratar Agora</a>
-            </div>
-            <div class="card pricing-card">
-                <h3>Plano Empresarial</h3>
-                <div class="price">Sob Consulta</div>
-                <ul>
-                    <li>SLA de Atendimento Dedicado (< 4h)</li>
-                    <li>Visitas Técnicas Preventivas Semanais</li>
-                    <li>Gestão de Servidores e Redes Complexas</li>
-                    <li>Consultoria de TI & Cibersegurança</li>
-                </ul>
-                <a href="#chamado" class="btn btn-outline btn-block">Falar com Consultor</a>
+            <div class="diferenciais-grid">
+                <div class="diferencial-card hidden-reveal"><i class="fas fa-check-circle"></i> Atendimento em áreas rurais</div>
+                <div class="diferencial-card hidden-reveal"><i class="fas fa-check-circle"></i> Atendimento rápido</div>
+                <div class="diferencial-card hidden-reveal"><i class="fas fa-check-circle"></i> Técnicos especializados</div>
+                <div class="diferencial-card hidden-reveal"><i class="fas fa-check-circle"></i> Orçamento sem compromisso</div>
+                <div class="diferencial-card hidden-reveal"><i class="fas fa-check-circle"></i> Suporte remoto</div>
+                <div class="diferencial-card hidden-reveal"><i class="fas fa-check-circle"></i> Atendimento presencial</div>
+                <div class="diferencial-card hidden-reveal"><i class="fas fa-check-circle"></i> Segurança dos dados</div>
+                <div class="diferencial-card hidden-reveal"><i class="fas fa-check-circle"></i> Equipamentos modernos</div>
             </div>
         </div>
     </section>
 
-    <section id="chamado" class="section bg-dark">
-        <div class="container grid grid-2">
-            <div class="scroll-anim">
-                <h2 class="section-title text-left">Abertura de Chamado Técnico</h2>
-                <p>Precisa de assistência técnica imediata? Abra seu chamado no nosso Centro de Operações. Nosso SLA inicial é ativado instantaneamente após o envio.</p>
-                <div class="sla-notice">
-                    <strong>⚠️ Casos Críticos:</strong> Atendimento emergencial prioritário para quedas de link de internet de ordenhas e sistemas de confinamento automatizados.
+    <section class="como-funciona section-padding">
+        <div class="container">
+            <div class="section-header hidden-reveal">
+                <h2>Como Funciona Nosso Atendimento</h2>
+                <div class="bar-title"></div>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item hidden-reveal">
+                    <div class="timeline-number">1</div>
+                    <h3>Cliente solicita atendimento</h3>
+                    <p>Preencha nosso formulário rápido ou mande mensagem pelo WhatsApp informando o problema.</p>
+                </div>
+                <div class="timeline-item hidden-reveal">
+                    <div class="timeline-number">2</div>
+                    <h3>Nossa equipe entra em contato</h3>
+                    <p>Um especialista analisa as informações iniciais e responde em poucos minutos.</p>
+                </div>
+                <div class="timeline-item hidden-reveal">
+                    <div class="timeline-number">3</div>
+                    <h3>Diagnóstico do problema</h3>
+                    <p>Avaliamos o aparelho remotamente ou de forma presencial para pontuar a falha exata.</p>
+                </div>
+                <div class="timeline-item hidden-reveal">
+                    <div class="timeline-number">4</div>
+                    <h3>Solução entregue</h3>
+                    <p>Realizamos os reparos necessários e entregamos seu equipamento operando com máxima performance.</p>
                 </div>
             </div>
-            <div class="card form-card scroll-anim">
-                <form id="ticketForm" enctype="multipart/form-data">
-                    <div class="form-grid">
-                        <input type="text" class="form-control" placeholder="Seu Nome Completo" required>
-                        <input type="email" class="form-control" placeholder="Seu E-mail" required>
+        </div>
+    </section>
+
+    <section id="atendimento" class="area-atendimento section-padding">
+        <div class="container">
+            <div class="section-header hidden-reveal">
+                <h2>Áreas de Cobertura</h2>
+                <div class="bar-title"></div>
+            </div>
+            <div class="atendimento-grid">
+                <div class="atendimento-block rural hidden-reveal">
+                    <div class="block-icon"><i class="fas fa-wheat-awn"></i></div>
+                    <h3>🌾 Zona Rural</h3>
+                    <ul>
+                        <li>Fazendas</li>
+                        <li>Chácaras</li>
+                        <li>Sítios</li>
+                        <li>Empresas agrícolas</li>
+                    </ul>
+                </div>
+                <div class="atendimento-block urbana hidden-reveal">
+                    <div class="block-icon"><i class="fas fa-city"></i></div>
+                    <h3>🏙 Zona Urbana</h3>
+                    <ul>
+                        <li>Residências</li>
+                        <li>Empresas</li>
+                        <li>Escritórios</li>
+                        <li>Comércios</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="depoimentos section-padding">
+        <div class="container">
+            <div class="section-header hidden-reveal">
+                <h2>O Que Nossos Clientes Dizem</h2>
+                <div class="bar-title"></div>
+            </div>
+            <div class="slider-container hidden-reveal">
+                <div class="slide active">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="comment">"Excelente atendimento. Resolveram o problema de rede do meu escritório no mesmo dia!"</p>
+                    <h4 class="author">- Carlos M., Advogado</h4>
+                </div>
+                <div class="slide">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="comment">"Resolveram meu notebook rapidamente. O atendimento remoto me poupou muito tempo."</p>
+                    <h4 class="author">- Mariana R., Designer</h4>
+                </div>
+                <div class="slide">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="comment">"Ótimo suporte na fazenda. Configuração perfeita do sinal de internet nos galpões."</p>
+                    <h4 class="author">- João P., Produtor Rural</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="contato section-padding">
+        <div class="container container-small">
+            <div class="form-box hidden-reveal">
+                <h2>Solicitar Atendimento</h2>
+                <p>Preencha os dados e seja direcionado para o suporte</p>
+                <form id="atendimentoForm">
+                    <div class="form-group">
+                        <label for="nome">Nome Completo</label>
+                        <input type="text" id="nome" placeholder="Digite seu nome">
                     </div>
-                    <div class="form-grid">
-                        <input type="tel" class="form-control" placeholder="Telefone Fixo">
-                        <input type="tel" class="form-control" placeholder="WhatsApp" required>
+                    <div class="form-group">
+                        <label for="telefone">Telefone / WhatsApp</label>
+                        <input type="text" id="telefone" placeholder="(00) 00000-0000">
                     </div>
-                    <div class="form-grid">
-                        <input type="text" class="form-control" placeholder="Cidade / Região" required>
-                        <select class="form-control" required>
-                            <option value="">Tipo de Atendimento</option>
-                            <option value="rural">Área Rural</option>
-                            <option value="urbana">Área Urbana / Empresarial</option>
+                    <div class="form-group">
+                        <label for="cidade">Cidade</label>
+                        <input type="text" id="cidade" placeholder="Sua cidade">
+                    </div>
+                    <div class="form-group">
+                        <label for="aparelho">Tipo de Aparelho</label>
+                        <select id="aparelho">
+                            <option value="">Selecione uma opção</option>
+                            <option value="Computador">Computador</option>
+                            <option value="Notebook">Notebook</option>
+                            <option value="Celular">Celular</option>
+                            <option value="Impressora">Impressora</option>
+                            <option value="Roteador">Roteador</option>
+                            <option value="Outro">Outro</option>
                         </select>
                     </div>
-                    <select class="form-control mb-3" required>
-                        <option value="">Nível de Prioridade</option>
-                        <option value="baixa">Baixa (Dúvidas/Configurações Simples)</option>
-                        <option value="media">Média (Instabilidade de Conexão/Equipamento)</option>
-                        <option value="alta">Alta (Parada Total de Operação/Queda Geral)</option>
-                    </select>
-                    <textarea class="form-control mb-3" rows="4" placeholder="Descreva detalhadamente o problema ou solicitação..." required></textarea>
-                    
-                    <div class="file-upload-wrapper mb-3">
-                        <label for="ticketFile" class="file-label">Anexar Imagem do Erro (Opcional)</label>
-                        <input type="file" id="ticketFile" accept="image/*">
+                    <div class="form-group">
+                        <label for="problema">Problema Encontrado</label>
+                        <textarea id="problema" rows="4" placeholder="Descreva brevemente o defeito ou solicitação..."></textarea>
                     </div>
-                    
-                    <button type="submit" class="btn btn-gold btn-block">Emitir Ordem de Serviço</button>
+                    <button type="submit" class="btn btn-primary btn-block btn-ripple">Enviar Solicitação</button>
                 </form>
             </div>
         </div>
     </section>
 
-    <section id="projetos" class="section bg-light">
-        <div class="container text-center mb-5">
-            <h2 class="section-title">Nossos Projetos e Portfólio</h2>
-            <div class="filter-buttons">
-                <button class="filter-btn active" data-filter="all">Todos</button>
-                <button class="filter-btn" data-filter="redes">Redes & Wi-Fi</button>
-                <button class="filter-btn" data-filter="antenas">Antenas Satelitais</button>
-                <button class="filter-btn" data-filter="cftv">CFTV & Segurança</button>
-                <button class="filter-btn" data-filter="fazendas">Fazendas Conectadas</button>
+    <section class="faq section-padding">
+        <div class="container container-small">
+            <div class="section-header hidden-reveal">
+                <h2>Dúvidas Frequentes</h2>
+                <div class="bar-title"></div>
             </div>
-        </div>
-
-        <div class="container grid grid-3 projects-grid" id="projectsGrid">
-            <div class="project-item card" data-category="fazendas">
-                <img src="https://images.unsplash.com/photo-1593113598332-cd288d649433?q=80&w=600" alt="Projeto Rural">
-                <div class="project-info">
-                    <h5>Infraestrutura Digital - Fazenda Alvorada</h5>
-                    <p>Área Rural</p>
-                </div>
-            </div>
-            <div class="project-item card" data-category="redes">
-                <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=600" alt="Data Center Corporativo">
-                <div class="project-info">
-                    <h5>Rede Estruturada - AgroIndústria Master</h5>
-                    <p>Corporativo</p>
-                </div>
-            </div>
-            <div class="project-item card" data-category="antenas">
-                <img src="https://images.unsplash.com/photo-1528243097678-739049b92f31?q=80&w=600" alt="Antena Satélite">
-                <div class="project-info">
-                    <h5>Link Dedicado - Sítio Tecnológico Vale</h5>
-                    <p>Antenas</p>
-                </div>
-            </div>
-            <div class="project-item card" data-category="cftv">
-                <img src="https://images.unsplash.com/photo-1557597774-9d273605dfa9?q=80&w=600" alt="Segurança Avançada">
-                <div class="project-info">
-                    <h5>Câmeras de Segurança AI - Condomínio Horizontal</h5>
-                    <p>CFTV</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <div id="lightbox" class="lightbox">
-        <span class="lightbox-close">&times;</span>
-        <img class="lightbox-content" id="lightboxImg" alt="Visualização expandida do projeto">
-    </div>
-
-    <section id="blog" class="section bg-dark">
-        <div class="container text-center mb-5">
-            <h2 class="section-title">Blog Tecnológico Hyperion</h2>
-            <p class="section-subtitle">Conhecimento, tendências e atualizações do universo tech para o campo e a cidade.</p>
-        </div>
-        <div class="container grid grid-3">
-            <article class="card blog-card">
-                <img src="https://images.unsplash.com/photo-1586771107445-d3ca888129ff?q=80&w=600" alt="Tecnologia no Campo">
-                <div class="blog-content">
-                    <span class="blog-date">23 Jun, 2026</span>
-                    <h4>Como o Wi-Fi 6 está revolucionando o monitoramento de maquinários</h4>
-                    <p>Descubra os ganhos de eficiência ao interligar colheitadeiras diretamente com a nuvem central corporativa.</p>
-                </div>
-            </article>
-            <article class="card blog-card">
-                <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=600" alt="Cibersegurança">
-                <div class="blog-content">
-                    <span class="blog-date">18 Jun, 2026</span>
-                    <h4>5 Armadilhas de segurança digital em redes corporativas urbanas</h4>
-                    <p>Mantenha os dados financeiros da sua empresa blindados contra ataques de Engenharia Social e Ransomware.</p>
-                </div>
-            </article>
-            <article class="card blog-card">
-                <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=600" alt="Automação Residencial">
-                <div class="blog-content">
-                    <span class="blog-date">10 Jun, 2026</span>
-                    <h4>Manutenção preventiva de TI: O segredo do Home Office sem quedas</h4>
-                    <p>Checklist essencial para evitar falhas de hardware nos computadores da sua residência.</p>
-                </div>
-            </article>
-        </div>
-    </section>
-
-    <section class="section bg-light text-center">
-        <div class="container mb-5">
-            <h2 class="section-title">Quem Confia na Hyperion</h2>
-        </div>
-        <div class="container testimonial-container">
-            <div class="testimonial-slider" id="testimonialSlider">
-                <div class="testimonial-slide active">
-                    <p class="testimonial-text">"Instalamos o sistema de antenas da Hyperion na nossa fazenda de grãos. Conexão perfeita mesmo a quilômetros da sede. Excelente suporte!"</p>
-                    <h5 class="testimonial-author">Ricardo Meneghetti - Produtor Rural</h5>
-                </div>
-                <div class="testimonial-slide">
-                    <p class="testimonial-text">"A consultoria de TI da Hyperion reestruturou todos os servidores de nossa empresa urbana. Velocidade e segurança impecáveis."</p>
-                    <h5 class="testimonial-author">Dra. Amanda Costa - CEO Costa Advocacia</h5>
-                </div>
-            </div>
-            <div class="testimonial-dots">
-                <span class="dot active" data-index="0"></span>
-                <span class="dot" data-index="1"></span>
-            </div>
-        </div>
-    </section>
-
-    <section id="orcamento" class="section bg-dark">
-        <div class="container text-center mb-5">
-            <h2 class="section-title">Solicite um Orçamento Customizado</h2>
-            <p class="section-subtitle">Retornamos com proposta detalhada em até 2 horas úteis.</p>
-        </div>
-        <div class="container max-width-md">
-            <div class="card form-card">
-                <form id="quoteForm">
-                    <div class="form-grid">
-                        <input type="text" class="form-control" placeholder="Seu Nome / Nome Comercial" required>
-                        <input type="text" class="form-control" placeholder="Nome da Empresa (Se aplicável)">
+            <div class="accordion hidden-reveal">
+                <div class="accordion-item">
+                    <button class="accordion-header">Vocês cobram taxa de deslocamento para a zona rural? <i class="fas fa-chevron-down"></i></button>
+                    <div class="accordion-body">
+                        <p>A taxa é calculada com base na distância da propriedade. Fale conosco no WhatsApp para obter um orçamento prévio preciso.</p>
                     </div>
-                    <div class="form-grid">
-                        <input type="tel" class="form-control" placeholder="Telefone Comercial" required>
-                        <input type="email" class="form-control" placeholder="E-mail Corporativo" required>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">Como funciona o suporte remoto? <i class="fas fa-chevron-down"></i></button>
+                    <div class="accordion-body">
+                        <p>Utilizamos softwares seguros de conexão criptografada. Se o seu equipamento liga e tem acesso à internet, conseguimos resolver problemas de sistema sem sair da empresa.</p>
                     </div>
-                    <input type="text" class="form-control mb-3" placeholder="Cidade / Estado da Instalação" required>
-                    <select class="form-control mb-3" required>
-                        <option value="">Selecione o Serviço Principal Desejado</option>
-                        <option value="infra-rural">Infraestrutura e Internet Rural Dedicada</option>
-                        <option value="cameras">Câmeras Inteligentes e Monitoramento Analítico</option>
-                        <option value="ti-empresarial">Consultoria e Redes de TI Corporativas</option>
-                        <option value="suporte-geral">Suporte Técnico Avulso e Manutenção de Hardware</option>
-                    </select>
-                    <textarea class="form-control mb-3" rows="4" placeholder="Fale brevemente sobre o escopo do seu projeto e necessidades..." required></textarea>
-                    <button type="submit" class="btn btn-gold btn-block">Enviar Solicitação de Proposta</button>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <section id="contato" class="section bg-light">
-        <div class="container grid grid-2">
-            <div>
-                <h2 class="section-title text-left">Fale Diretamente Conosco</h2>
-                <p class="mb-4">Escolha o canal de sua preferência para atendimento humanizado e ágil.</p>
-                <div class="contact-links">
-                    <p><strong>🟢 WhatsApp Central:</strong> (11) 99999-8888</p>
-                    <p><strong>🟢 WhatsApp Comercial:</strong> (11) 99999-7777</p>
-                    <p><strong>📞 Telefone Fixo:</strong> (11) 3333-2222</p>
-                    <p><strong>✉️ E-mail Suporte:</strong> suporte@hyperionrural.com.br</p>
-                    <p><strong>🏢 Endereço Central:</strong> Av. das Nações Tecnológicas, 1500 - São Paulo/SP</p>
                 </div>
-            </div>
-            <div>
-                <h3 class="mb-3">Redes de Conexão</h3>
-                <div class="social-box-grid">
-                    <a href="#" class="social-box">Instagram</a>
-                    <a href="#" class="social-box">Facebook</a>
-                    <a href="#" class="social-box">LinkedIn</a>
-                    <a href="#" class="social-box">Telegram</a>
+                <div class="accordion-item">
+                    <button class="accordion-header">Qual o prazo de garantia dos reparos? <i class="fas fa-chevron-down"></i></button>
+                    <div class="accordion-body">
+                        <p>Todos os nossos serviços físicos possuem garantia legal mínima de 90 dias cobrindo a mão de obra e peças substituídas.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <div class="chat-widget" id="chatWidget">
-        <div class="chat-header" id="chatHeader">
-            <span>🤖 Assistente Hyperion</span>
-            <button class="chat-minimize">_</button>
+    <section class="cta-final section-padding">
+        <div class="container text-center hidden-reveal">
+            <h2>Precisando de suporte técnico?</h2>
+            <p>Não espere o problema parar sua rotina ou sua produção. Nossa equipe está pronta para restabelecer seus sistemas.</p>
+            <a href="https://wa.me/5533991098620" target="_blank" class="btn btn-primary btn-large btn-ripple"><i class="fab fa-whatsapp"></i> Falar no WhatsApp</a>
         </div>
-        <div class="chat-body" id="chatBody">
-            <div class="chat-msg bot">Olá! Sou o assistente virtual da Hyperion. Como posso te ajudar hoje? Digite o número correspondente à sua dúvida:<br><br>1. Planos de Internet Rural<br>2. Suporte Corporativo Urbano<br>3. Orçamento e Prazos</div>
-        </div>
-        <div class="chat-footer">
-            <input type="text" id="chatInput" placeholder="Digite 1, 2 ou 3...">
-            <button id="chatSend">></button>
-        </div>
-    </div>
+    </section>
 
     <footer class="footer">
-        <div class="container grid grid-4">
-            <div>
-                <h4 class="footer-title">Hyperion Rural</h4>
-                <p style="font-size: 0.9rem; color: #aaa;">Líderes em engenharia de telecomunicação e suporte de TI premium integrando o campo e os grandes centros urbanos de forma unificada.</p>
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <h3><i class="fas fa-microchip text-gold"></i> Hyperion <span>Digital</span></h3>
+                <p>Tecnologia e inovação movendo negócios urbanos e do agronegócio.</p>
             </div>
-            <div>
-                <h4 class="footer-title">Acesso Rápido</h4>
-                <ul class="footer-links">
-                    <li><a href="#inicio">Início</a></li>
-                    <li><a href="#sobre">Sobre Nós</a></li>
-                    <li><a href="#servicos">Serviços</a></li>
-                    <li><a href="#planos">Planos</a></li>
-                </ul>
+            <div class="footer-contact">
+                <h4>Informações de Contato</h4>
+                <p><i class="fas fa-phone"></i> Telefone: (33) 99109-8620</p>
+                <p><i class="fab fa-whatsapp"></i> WhatsApp: (33) 99109-8620</p>
+                <p><i class="fas fa-envelope"></i> E-mail: contato@hyperiondigital.com.br</p>
             </div>
-            <div>
-                <h4 class="footer-title">Zonas de Foco</h4>
-                <ul class="footer-links">
-                    <li><a href="#servicos">Internet Rural Mesh</a></li>
-                    <li><a href="#servicos">Infraestrutura Corporativa</a></li>
-                    <li><a href="#servicos">Segurança Digital</a></li>
-                    <li><a href="#servicos">Automação de Pivôs</a></li>
-                </ul>
-            </div>
-            <div>
-                <h4 class="footer-title">Atendimento</h4>
-                <p style="font-size: 0.9rem; color: #aaa;">Segunda a Sexta: 07:00 às 19:00<br>Sábados: 08:00 às 14:00<br>Plantão de Emergência 24/7 para clientes corporativos contratantes.</p>
+            <div class="footer-social">
+                <h4>Siga-nos</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
             </div>
         </div>
         <div class="footer-bottom">
-            <div class="container text-center">
-                <p>&copy; 2026 Hyperion Rural & Urban Tech. Todos os direitos reservados. Proteção e conectividade de ponta a ponta.</p>
-            </div>
+            <p>&copy; 2026 Hyperion Digital. Todos os direitos reservados.</p>
         </div>
     </footer>
 
